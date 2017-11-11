@@ -10,15 +10,15 @@ services:
       - ./:/var/lib/drone/
     restart: always
     environment:
-      - DRONE_HOST=https://559e3faa.ngrok.io
+      - DRONE_HOST=https://3d435577.ngrok.io
       - DRONE_OPEN=true
       - DRONE_SECRET=drone-workshop
-      - DRONE_ADMIN=appleboy
+      - DRONE_ADMIN=e61983
 
       # GitHub Config
       - DRONE_GITHUB=true
-      - DRONE_GITHUB_CLIENT=${CLIENT}
-      - DRONE_GITHUB_SECRET=${SECRET}
+      - DRONE_GITHUB_CLIENT=64e4076391ee01180c2b
+      - DRONE_GITHUB_SECRET=f021d3deb90703d4984b7ad689ba0781bf5c4b5f
 
   drone-agent:
     image: drone/agent:0.8
